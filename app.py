@@ -1,6 +1,6 @@
 
 import random
-from datetime import date
+from datetime import datetime
 from zoneinfo import ZoneInfo
 import streamlit as st
 
