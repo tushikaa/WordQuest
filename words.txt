@@ -149345,7 +149345,6 @@ inachoid
 inachus
 inacquaintance
 inacquiescent
-inact
 inactinic
 inaction
 inactionist
