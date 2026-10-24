@@ -30,7 +30,8 @@ if not words:
 
 # Choose today's word using the same logic as wordquest.py
 today=datetime.now(ZoneInfo("Asia/Kolkata")).date()
-random.seed(today().toordinal())
+day_number = today.year * 10000 + today.month * 100 + today.day
+random.seed(day_number)
 answer = random.choice(words)
 
 
