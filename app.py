@@ -1,6 +1,7 @@
 
 import random
 from datetime import date
+from zoneinfo import ZoneInfo
 import streamlit as st
 
 
@@ -28,7 +29,8 @@ if not words:
 
 
 # Choose today's word using the same logic as wordquest.py
-random.seed(date.today().toordinal())
+today=datetime.now(ZoneInfo("Asia/Kolkata")).date()
+random.seed(today().toordinal())
 answer = random.choice(words)
 
 
